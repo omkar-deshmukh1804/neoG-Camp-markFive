@@ -1,0 +1,98 @@
+:root{
+    --clr-primary : #F2C94C;
+    --clr-secondary : #004225;
+}
+
+body {
+	animation: fadeInAnimation ease .5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation: fadeInAnimation ease .5s;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .input--one, .input--two{
+        max-width: 50%;
+        margin: auto;
+    }
+  }
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    height: 100vh;
+    font-family: 'Kalam', cursive;
+}
+
+.heading{
+    width: 100%;
+    background-color: var(--clr-primary);
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading--text{
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.input--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem;
+}
+.translate--btn{
+    background-color: var(--clr-primary);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: 'Kalam', cursive;
+    font-size: large;
+}
+
+.about--ctn{
+    height: 100%;
+    width: 100%;
+    background-color: var(--clr-secondary);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about--heading{
+    font-size: 2rem;
+    width: 50%;
+    margin: auto;
+
+}
+
+.about--text{
+    max-width: 600px;
+    width: 50%;
+    margin: auto;
+
+}
